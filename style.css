@@ -1,0 +1,135 @@
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgray;
+}
+.container{
+    background-color: #E4F9F5;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+[class*="col-"]{
+    float: left;
+    padding: 5px;
+}
+.logo-part img{
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+.navbar-title{
+    
+}
+.navbar::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+.banner img{
+    width: 300px;
+}
+.banner h2:hover{
+    transform: scale(1.2)
+}
+.banner::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+.main{
+    text-align: center;
+}
+.main label{
+    display: block;
+    width: 80%;
+    /* text-align: center; */
+    padding: 10px;
+    font-size: 20px;
+}
+.main input, textarea,select{
+    width: 80%;
+    padding: 10px;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+}
+.right input[type="reset"]{
+    background-color: cadetblue;
+    display: inline;
+    margin-top: 10px;
+    width: 150px;
+    transition: 0.4s;
+    margin-right: 20px;
+}
+.right input[type="reset"]:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
+.right input[type="submit"]{
+    display: inline;
+    margin-top: 10px;
+    width: 150px;
+    transition: 0.4s;
+    background-color: cadetblue;
+}
+.right input[type="submit"]:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+main::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+.footer{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    background-color: aqua;
+    color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* .footer::after{
+    clear: both;
+    content: '';
+    display: table;
+} */
+.container::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+@media screen and (max-width: 768px){
+    [class*="col-"]{
+        width: 100%;
+    }
+}
